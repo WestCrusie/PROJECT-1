@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Scholarship Application</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>WEST UNIVERSITY SCHOLARSHIP PAGE</h2>
+    </div>
+    <div class="nav-header">
+        <div class="row2">
+            <a href="#"> NEW STUDENTS |</a>
+            <a href="#">PAY PORTAL |</a>
+            <a href="#">RETURNING STUDENTS |</a>
+        </div>
+        <div class="right">
+            <div class="row1">
+                <a href="#">ABOUT US |</a>
+                <a href="#">CONTACT US |</a>
+                <a href="#">LOGIN |</a>
+            </div>
+        </div>
+    </div>
+    <div class="head">
+        <h2>Scholarship Form 2022/2023 Session</h2>
+    </div>
+    <div class="container">
+        <div class="form">
+            <form class="myform">
+                <div class="form-group">
+                    <div class="input-form">
+                        <label class="first-label">First Name</label>
+                        <input type="text" id="fname" name="Firstname" class="input-box">
+                        <span></span>
+                    </div>
+                    <div class="input-form">
+                        <label class="first-label">Last Name</label>
+                        <input type="text" id="lname" name="Lastname" class="input-box">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-form">
+                        <label class="first-label">Email</label>
+                        <input type="email" id="mail" name="Email" class="input-box">
+                        <span></span>
+                    </div>
+                    <div class="input-form">
+                        <label class="first-label"> Date of Birth</label>
+                        <input type="date" id="dob" name="Date of Birth" class="input-box">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-form">
+                        <label class="first-label">Gender</label>
+                        <select id="gender" name="Gender" class="input-box">
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <span></span>
+                    </div>
+                    <div class="input-form">
+                        <label class="first-label">Phone Number</label>
+                        <input type="text" id="phone" name="Phone Number" class="input-box">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-form">
+                        <label class="first-label">School</label>
+                        <input type="text" id="sch" name="School" class="input-box-2">
+                        <span></span>
+                    </div>
+                </div>
+            </form>
+            <div class="Continent">
+                <div class="input-conti">
+                    <label class="first-label">Continent</label>
+                    <select name="Continent" id="Continent" class="input-box-1">
+                        <option value="">Select</option>
+                        <option value="africa">Africa</option>
+                        <option value="asia">Asia</option>
+                        <option value="northamerica">North America</option>
+                        <option value="southamerica">South America</option>
+                        <option value="others">others</option>
+                    </select>
+                    <span></span>
+                </div>
+
+                <div class="input-contr c-hidden" id="africaContr">
+                    <label class="first-label">Africa</label>
+                    <select name="africa" id="africa" class="input-box-1">
+                        <option value="">Select</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="ghana">Ghana</option>
+                        <option value="niger">Niger</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="input-contr c-hidden" id="asiaContr">
+                    <label class="first-label">Asia</label>
+                    <select name="asia" id="asia" class="input-box-1">
+                        <option value="">Select</option>
+                        <option value="china">China</option>
+                        <option value="india">India</option>
+                        <option value="singapore">Singapore</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="input-contr c-hidden" id="northamericaContr">
+                    <label class="first-label">North America</label>
+                    <select name="northamerica" id="northamerica" class="input-box-1">
+                        <option value="">Select</option>
+                        <option value="canada">Canada</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="input-contr c-hidden" id="southamericaContr">
+                    <label class="first-label">South America</label>
+                    <select name="southamerica" id="southamerica" class="input-box-1">
+                        <option value="">Select</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="chile">Chile</option>
+                        <option value="peru">Peru</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="input-contr c-hidden" id="othersContr">
+                    <label class="first-label">Others</label>
+                    <select name="others" id="others" class="input-box-1">
+                        <option value="">Select</option>
+                        <option value="spain">Spain</option>
+                        <option value="england">England</option>
+                        <option value="italy">Italy</option>
+                    </select>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="suject">
+                <div class="input-subj">
+                    <label class="first-label">Mathematics</label>
+                    <select name="maths" id="subj1" class="input-box-1" disabled>
+                        <option value="maths">Mathematics</option>
+                        <option value="english">English</option>
+                        <option value="agric">Agriculture</option>
+                        <option value="biology">Biology</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="civic">Civic Education</option>
+                        <option value="economics">Economics</option>
+                        <option value="foodandnut">Food and Nutrition</option>
+                        <option value="government">Government</option>
+                        <option value="homec">Home Economics</option>
+                        <option value="physics">Physics</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="input-Score">
+                    <label class="first-label">Score</label>
+                    <input type="number" class="input-box-1" id="subSc1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="suject">
+                <div class="input-subj">
+                    <label class="first-label">English</label>
+                    <select name="english" id="subj2" class="input-box-1" disabled>
+                        <option value="maths">English</option>
+                        <option value="english">Mathematics</option>
+                        <option value="agric">Agriculture</option>
+                        <option value="biology">Biology</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="civic">Civic Education</option>
+                        <option value="economics">Economics</option>
+                        <option value="foodandnut">Food and Nutrition</option>
+                        <option value="government">Government</option>
+                        <option value="homec">Home Economics</option>
+                        <option value="physics">Physics</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="input-Score">
+                    <label class="first-label">Score</label>
+                    <input type="number" class="input-box-1" id="subSc2">
+                    <span></span>
+                </div>
+            </div>
+            <div class="suject">
+                <div class="input-subj">
+                    <label class="first-label">Subject 3</label>
+                    <select name="english" id="sub3" class="input-box-1">
+                        <option value="">Select</option>
+                        <option value="maths">English</option>
+                        <option value="english">Mathematics</option>
+                        <option value="agric">Agriculture</option>
+                        <option value="biology">Biology</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="civic">Civic Education</option>
+                        <option value="economics">Economics</option>
+                        <option value="foodandnut">Food and Nutrition</option>
+                        <option value="government">Government</option>
+                        <option value="homec">Home Economics</option>
+                        <option value="physics">Physics</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="input-Score">
+                    <label class="first-label">Score</label>
+                    <input type="number" class="input-box-1" id="subSc3">
+                    <span></span>
+                </div>
+            </div>
+            <div class="suject">
+                <div class="input-subj">
+                    <label class="first-label">Subject 4</label>
+                    <select name="english" id="sub4" class="input-box-1">
+                        <option value="">Select</option>
+                        <option value="maths">English</option>
+                        <option value="english">Mathematics</option>
+                        <option value="agric">Agriculture</option>
+                        <option value="biology">Biology</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="civic">Civic Education</option>
+                        <option value="economics">Economics</option>
+                        <option value="foodandnut">Food and Nutrition</option>
+                        <option value="government">Government</option>
+                        <option value="homec">Home Economics</option>
+                        <option value="physics">Physics</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="input-Score">
+                    <label class="first-label">Score</label>
+                    <input type="number" class="input-box-1" id="subSc4">
+                    <span></span>
+                </div>
+            </div>
+            <div class="suject">
+                <div class="input-subj">
+                    <label class="first-label">Subject 5</label>
+                    <select name="english" id="sub5" class="input-box-1">
+                        <option value="">Select</option>
+                        <option value="maths">English</option>
+                        <option value="english">Mathematics</option>
+                        <option value="agric">Agriculture</option>
+                        <option value="biology">Biology</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="civic">Civic Education</option>
+                        <option value="economics">Economics</option>
+                        <option value="foodandnut">Food and Nutrition</option>
+                        <option value="government">Government</option>
+                        <option value="homec">Home Economics</option>
+                        <option value="physics">Physics</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="input-Score">
+                    <label class="first-label">Score</label>
+                    <input type="number" class="input-box-1" id="subSc5">
+                    <span></span>
+                </div>
+            </div>
+            <div class="suject">
+                <div class="input-subj">
+                    <label class="first-label">Subject 6</label>
+                    <select name="english" id="sub6" class="input-box-1">
+                        <option value="">Select</option>
+                        <option value="maths">English</option>
+                        <option value="english">Mathematics</option>
+                        <option value="agric">Agriculture</option>
+                        <option value="biology">Biology</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="civic">Civic Education</option>
+                        <option value="economics">Economics</option>
+                        <option value="foodandnut">Food and Nutrition</option>
+                        <option value="government">Government</option>
+                        <option value="homec">Home Economics</option>
+                        <option value="physics">Physics</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="input-Score">
+                    <label class="first-label">Score</label>
+                    <input type="number" class="input-box-1" id="subSc6">
+                    <span></span>
+                </div>
+            </div>
+            <div class="suject">
+                <div class="input-subj">
+                    <label class="first-label">Subject 7</label>
+                    <select name="english" id="sub7" class="input-box-1">
+                        <option value="">Select</option>
+                        <option value="maths">English</option>
+                        <option value="english">Mathematics</option>
+                        <option value="agric">Agriculture</option>
+                        <option value="biology">Biology</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="civic">Civic Education</option>
+                        <option value="economics">Economics</option>
+                        <option value="foodandnut">Food and Nutrition</option>
+                        <option value="government">Government</option>
+                        <option value="homec">Home Economics</option>
+                        <option value="physics">Physics</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="input-Score">
+                    <label class="first-label">Score</label>
+                    <input type="number" class="input-box-1" id="subSc7">
+                    <span></span>
+                </div>
+            </div>
+            <div class="suject">
+                <div class="input-subj">
+                    <label class="first-label">Subject 8</label>
+                    <select name="english" id="sub8" class="input-box-1">
+                        <option value="">Select</option>
+                        <option value="maths">English</option>
+                        <option value="english">Mathematics</option>
+                        <option value="agric">Agriculture</option>
+                        <option value="biology">Biology</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="civic">Civic Education</option>
+                        <option value="economics">Economics</option>
+                        <option value="foodandnut">Food and Nutrition</option>
+                        <option value="government">Government</option>
+                        <option value="homec">Home Economics</option>
+                        <option value="physics">Physics</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="input-Score">
+                    <label class="first-label">Score</label>
+                    <input type="number" class="input-box-1" id="subSc8">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="suject">
+                <button id="submitBtn" type="button" class="">Apply</button>
+            </div>
+            </di>
+
+            <div class="result-container" id="resultContainer"></div>
+
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+            
+
+        </div>
+
+        <script src="main.js"></script>
+</body>
+
+</html>
